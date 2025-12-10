@@ -8,7 +8,7 @@ import json
 import logging
 from pathlib import Path
 from typing import Dict, List, Optional, Any
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, date
 from collections import Counter
 
 import yaml
@@ -22,6 +22,14 @@ import mcp.types as types
 # Set up logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
+
+# Custom JSON encoder for handling date/datetime objects
+class DateTimeEncoder(json.JSONEncoder):
+    """JSON encoder that handles date and datetime objects"""
+    def default(self, obj):
+        if isinstance(obj, (datetime, date)):
+            return obj.isoformat()
+        return super().default(obj)
 
 # Configuration - use environment variable or current directory
 BASE_DIR = Path(os.environ.get('MANAGER_AI_BASE_DIR', Path.cwd()))
@@ -495,7 +503,7 @@ async def handle_call_tool(
             "count": len(tasks),
             "filters_applied": arguments or {}
         }
-        return [types.TextContent(type="text", text=json.dumps(result, indent=2))]
+        return [types.TextContent(type="text", text=json.dumps(result, indent=2, cls=DateTimeEncoder))]
     
     elif name == "create_task":
         title = arguments['title']
@@ -536,7 +544,7 @@ async def handle_call_tool(
                 "error": str(e)
             }
         
-        return [types.TextContent(type="text", text=json.dumps(result, indent=2))]
+        return [types.TextContent(type="text", text=json.dumps(result, indent=2, cls=DateTimeEncoder))]
     
     elif name == "update_task_status":
         task_file = arguments['task_file']
@@ -560,7 +568,7 @@ async def handle_call_tool(
                 "new_status": status_names.get(status, status)
             }
         
-        return [types.TextContent(type="text", text=json.dumps(result, indent=2))]
+        return [types.TextContent(type="text", text=json.dumps(result, indent=2, cls=DateTimeEncoder))]
     
     elif name == "get_task_summary":
         tasks = get_all_tasks()
@@ -589,7 +597,7 @@ async def handle_call_tool(
             "time_by_priority": time_by_priority
         }
         
-        return [types.TextContent(type="text", text=json.dumps(result, indent=2))]
+        return [types.TextContent(type="text", text=json.dumps(result, indent=2, cls=DateTimeEncoder))]
     
     elif name == "check_priority_limits":
         tasks = [t for t in get_all_tasks() if t.get('status') != 'd']
@@ -609,7 +617,7 @@ async def handle_call_tool(
             "balanced": len(alerts) == 0
         }
         
-        return [types.TextContent(type="text", text=json.dumps(result, indent=2))]
+        return [types.TextContent(type="text", text=json.dumps(result, indent=2, cls=DateTimeEncoder))]
 
     elif name == "get_system_status":
         all_tasks = get_all_tasks()
@@ -651,7 +659,7 @@ async def handle_call_tool(
             "timestamp": now.isoformat()
         }
         
-        return [types.TextContent(type="text", text=json.dumps(result, indent=2))]
+        return [types.TextContent(type="text", text=json.dumps(result, indent=2, cls=DateTimeEncoder))]
     
     elif name == "process_backlog":
         backlog_file = BASE_DIR / 'BACKLOG.md'
@@ -699,7 +707,7 @@ async def handle_call_tool(
                     "count": len(items)
                 }
         
-        return [types.TextContent(type="text", text=json.dumps(result, indent=2))]
+        return [types.TextContent(type="text", text=json.dumps(result, indent=2, cls=DateTimeEncoder))]
     
     elif name == "clear_backlog":
         backlog_file = BASE_DIR / 'BACKLOG.md'
@@ -718,7 +726,7 @@ async def handle_call_tool(
                 "error": str(e)
             }
         
-        return [types.TextContent(type="text", text=json.dumps(result, indent=2))]
+        return [types.TextContent(type="text", text=json.dumps(result, indent=2, cls=DateTimeEncoder))]
     
     elif name == "prune_completed_tasks":
         days = arguments.get('days', 30) if arguments else 30
@@ -745,7 +753,7 @@ async def handle_call_tool(
             "message": f"Deleted {len(deleted)} tasks older than {days} days"
         }
         
-        return [types.TextContent(type="text", text=json.dumps(result, indent=2))]
+        return [types.TextContent(type="text", text=json.dumps(result, indent=2, cls=DateTimeEncoder))]
     
     elif name == "process_backlog_with_dedup":
         items = arguments.get('items', [])
@@ -754,7 +762,7 @@ async def handle_call_tool(
         if not items:
             return [types.TextContent(type="text", text=json.dumps({
                 "error": "No items provided to process"
-            }, indent=2))]
+            }, indent=2, cls=DateTimeEncoder))]
 
         existing_tasks = get_all_tasks()
 
@@ -847,7 +855,7 @@ async def handle_call_tool(
                 f"Ready to create {len(result['new_tasks'])} new tasks - use auto_create=true or create manually"
             )
         
-        return [types.TextContent(type="text", text=json.dumps(result, indent=2))]
+        return [types.TextContent(type="text", text=json.dumps(result, indent=2, cls=DateTimeEncoder))]
     
     else:
         return [types.TextContent(
