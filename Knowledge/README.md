@@ -6,15 +6,28 @@ Store reference documents, research, specs, meeting notes, and any persistent in
 
 ---
 
-## What Goes Here
+## Folder Structure
 
-| Type | Examples |
-|------|----------|
-| Specs & briefs | Project requirements, feature specs |
-| Meeting notes | Decisions, action items, attendees |
-| Research | Market analysis, technical findings |
-| Process docs | How-tos, checklists, runbooks |
-| References | Links, contacts, credentials (encrypted) |
+```
+Knowledge/
+├── Meetings/           # Processed meeting notes (structured summaries)
+├── Transcripts/        # Raw meeting transcripts from Granola
+├── Specs/              # Project specs and briefs
+├── Research/           # Research notes and analysis
+├── Process/            # Process docs, runbooks, checklists
+└── References/         # Links, contacts, etc.
+```
+
+## What Goes Where
+
+| Folder | Purpose | Examples |
+|--------|---------|----------|
+| `Meetings/` | Structured meeting summaries with decisions and action items | Product sync notes, stakeholder meetings, team planning |
+| `Transcripts/` | Raw meeting transcripts synced from Granola | Auto-synced meeting recordings |
+| `Specs/` | Project requirements and feature specifications | Feature briefs, technical specs, PRDs |
+| `Research/` | Analysis and findings | Market research, technical investigations |
+| `Process/` | How-to guides and operational docs | Runbooks, checklists, SOPs |
+| `References/` | Quick reference materials | Links, contacts, credentials (encrypted) |
 
 ---
 
