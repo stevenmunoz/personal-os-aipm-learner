@@ -1,0 +1,530 @@
+Steven Muñoz | 00:02
+Divia, how are you doing?
+divya.sabade | 00:07
+Hello, hey, Steven, hi, how are you doing? I'm good, I was exploring my mind today. [Laughter] Yeah.
+Steven Muñoz | 00:16
+That's a great product. I have been using that for like four years, I would say, and yeah, I have still not canceled my subscription. I have. I have been tempted to do it. But I have, like, so much information there that I.
+divya.sabade | 00:30
+It's stickiness.
+Steven Muñoz | 00:30
+I'm not...
+divya.sabade | 00:31
+Yeah, they have built stickiness in the product, but one thing I observed is that they don't have a free version, right? They start at $7 and go forth, right?
+Steven Muñoz | 00:40
+Go for it. That's right.
+divya.sabade | 00:42
+Okay, good to know.
+Okay, so what I was doing is... It's very amazing to see what the tool can build. That's why I went back and took a step where I was brainstorming and seeing staff because I think it is very important to be clear what we want to build and take an end-to-end flow. It'll be nice to be sure that even if it's a small flow, everything's working, and I'll explain. You have put some notes.
+I think we should do that. Then what that means is not only the UI is really good and the flow is really good, and the person feels that yes, I started here, I ended here, but it's in the back end. Everything's flowing very nicely, for example, if we are doing scoring, then there's an explanation to store scores, there's an evaluation built in, or the QHX that we want to build even for the smallest part.
+I think we should do that because what will happen is the tools are so cool now they are building. What they're lacking is, I feel, the UI, the UX, those flows, and I know they're building. But would this sustain the scales? Again, I'm thinking... I know you mentioned the backend that we would use, but I still have that feeling that it just builds this app so fast. I don't feel comfortable with... I don't know if anybody... If I build this app, I take it out, and another person sees this app, they would be able to replicate.
+That's not the mode. That's where we have to start thinking that tomorrow if we keep this app out, how would it break? That other person cannot rebuild it. So that's another point I think we should keep in mind.
+But yeah. Happy to listen to your thoughts. I just started saying... Because I was writing and jotting. So it was all on my mind.
+Steven Muñoz | 02:26
+No, it's great to hear you because, after the past conversation... Yeah, what I tried to do that weekend is... Okay, with the information that the agent has, let's see if it can come up with something that makes sense in terms of what we are thinking about.
+Let's prototype this.
+divya.sabade | 02:45
+Yeah.
+Steven Muñoz | 02:47
+You know, and see what are the results and when I start like seeing the idea was like, yeah, of course we need to make like a bunch of tweaking and that's what.
+divya.sabade | 02:54
+But it's your.
+Steven Muñoz | 02:55
+But what's incredible to see. Gosh, this is what we are kind of what we are thinking like the idea we have, right?
+divya.sabade | 03:00
+It's out.
+Steven Muñoz | 03:02
+This is the extension so you save it. Then I can go... This is my learning paths, my goals, my connections. So... That was... I would say... Very good.
+divya.sabade | 03:13
+I saw... Because I told you, I'll send you some notes by the end of the day.
+Steven Muñoz | 03:13
+Yeah.
+divya.sabade | 03:18
+And I was so curious. I just went on the link and I saw it and I. My God. Like it's already like, you know, what we were thinking is out.
+Steven Muñoz | 03:23
+Five?
+divya.sabade | 03:24
+That means if we think better would be out.
+That's where I'm going. So I think I'm very happy that you did that because this is a validation of what we think. It's okay and easier and not so hard to build. But again, because it's not so hard to build, I don't want people to replicate.
+So we should put enough thinking process in between and tie that up so well that we get that mode. Once it's out, it's not easier to replicate because that is one fear I have. It shouldn't be easy to replicate.
+Steven Muñoz | 03:53
+No, absolutely. But I'm going to tell you something else. The reason why we were able to build this in one day is because really I spent the past six months intentionally trying to come up with workflows to be able to do this right.
+So it's not like one be just take it because there's a bunch of workflows, agents, and stuff that I have been trying to fine-tune to be able to actually do this prototype faster, come up with ideas faster, and the same thing is going to happen with the back and stuff, right?
+divya.sabade | 04:17
+Yes.
+Steven Muñoz | 04:33
+We are going to put something that is not... You will go and this is going to start breaking at first. No, we're going to put something that is the way that developers build real software like a production-ready workflow where this is going to have a pipeline, this is going to have unit testing, this is going to have automations. It means that once we start building, I don't... I don't want that we inject a new feature and then we break everything else that is just not acceptable, right?
+So the point is. Okay, now we are building the foundation, we are building the workflows, and we are building all we need to be able to come up with a good rhythm. I honestly don't think this is something that...
+Yeah, people maybe could get something closer. Of course, they could use rapid or something like that, but what we're doing here, plus the workflows, is going to be a great mode for us because it's going to give us the speed plus the deep thinking that we are doing to be able to potentate that.
+So that's what we should be...
+divya.sabade | 05:29
+I trust you, because if you're... Yeah, I know this is really good. I was like, to be very frank, I was impressed. When I saw the video, it was already like a Chrome extension. I had nothing to say. It was more like, "I have to now test and figure out how we differentiate how we think."
+That's where my thoughts started going because now I'm not like, "Will we be able to build?" No, we will be able to build because I think I trust how fast you are. Then things like that...
+I appreciate what you do. You are so fast, it's amazing.
+Steven Muñoz | 05:58
+Yes.
+divya.sabade | 05:59
+So I love, like, you know, pottering this where I'm able to, like, slow and thinking deep and you are like, very fast and, you know, let's go and get it done.
+I think it's a good mix. Love it. Yeah, [Laughter] but I liked it. Would you want me to take through, like, quick thinking, like what you feel after you built it, like I was going through it. But if you have any thoughts, I would love to hear from you.
+Steven Muñoz | 06:21
+Yeah, I did not look... I would check in on what you were writing in the document. Maybe we can start over that, then we can jump into the application and then start seeing...
+divya.sabade | 06:25
+Okay.
+Steven Muñoz | 06:31
+Okay, which piece makes sense, which piece we need to improve.
+This is where we can start, basically doing the next iteration. Because ideally, DA probably between today and Monday, we can solidify the end experience. After that, it's where I'm planning to start building the VA.
+So that's my intention.
+divya.sabade | 06:47
+Yeah, okay, fair enough. So let me actually quickly share my screen so we could get started. Yeah, I can take you through what I was thinking. I think so. This should be it. Why is it not allowing me to share? Can you see the doc?
+Steven Muñoz | 07:20
+Yeah. I see. No.
+divya.sabade | 07:22
+Okay, yeah, so what I was thinking is... Yeah. So I purposely did not sign up, but I wanted to go through the entire flow. So I was going through and just clicking as a new user. I really like how they have built my mind because whoever has built it has that design and very clear thinking. They have done such a good job, each screen. I felt it was wonderfully done, really good.
+I know we have made enhancements with all these GPTs, etc., and now coding is becoming easier. But really good work. So I think it's a super awesome inspiration to take from. What I really like is...
+So I literally just went through it. It's basically like I like how... That entry point to their app was this one like this. This is such a fluid image that they have and the color choices and all that, and they have just one click thing.
+So, it's very clear that what you have to do. What's the feeling like when you enter that space? It's more like they immediately give that feel that you want to be when you're not too much digital.
+Thing you want to digital detox and things. So I love the field that comes instantaneously from the app. Then what I loved is that they did this part. I think this is going to become very important more and more. We are going to have this... You know, with the advancements of whatever... We all own our own personal OS and everything is going to become so easy to have an agent on a phone and do everything. This is good. This is a very awesome piece that I think they have in their positioning that no social features...
+I mean, it's irrespective of what we plan to do. But I think it's very powerful that what they want people to really focus on. This is why they don't have a free. They have like $7.
+That is why the pricing is at that point, nobody has a free access because they don't have a way to monetize it. So this is how... If I think from the product angle, this is why they don't have a free part, right?
+So love this. Then I liked how step by step, they literally... I remember when I was reading this and they had some music going on in the background. The whole feel of entering the app is so different.
+So whoever has done the job is really nice. Then I loved how it swirled around and it came back to this orange person's mind. So that was pretty cool too. Yeah, and then this is all fine. So this is definitely inspiration to take from really outstanding work that they have done in terms of just onboarding the user. A very nice feeling.
+I think this is some kind of feeling we should give. We can think of it. So that's why I just put it. Then I realized that what they have done or why they started with this app is they have used AI to auto-tag and auto-organize.
+That's their crux for now. But what irritated me is that they're exactly thinking where we are. Because they have this Newton coming in, so that means they are thinking about maybe using the newer features and doing something.
+So that's why I wrote here our ideas coming. So they're definitely doing something we are thinking of, but it could be broader because they have a wide audience. They have writers and people who need pictures, write, etc.
+So I think where we could win against them, even if we take a lot of inspiration, is the vertical. I've written in the back about it, so yeah. Then I was just going through what all you did. So I loved it.
+It's so super easy to see how you did it. Love the concept. Whatever you came up with, the prototypes are really good except for the colors and more details I think. Overall, really cool stuff.
+Then I was just going through how we could differentiate. Suppose we want to build something closer and take a lot of inspiration. Then what if tomorrow my mind comes and builds a learning path and then where we are?
+So I started thinking on those lines. Yeah, I did a couple of user flows and I was just thinking through the app and all that. So I put the notes here. I was chatting with the GPD too. So I think all that is good. What I wanted to show you here is
+this part. So basically, I think what my mind is, it's more like the digital memory. It's like the memory they're storing stuff, but that's where they're doing what they're doing right now. I think the next level, Newton, would be where they're using that stored stuff to do stuff.
+But I think for us, what would really come down to is vertically where we are targeting. So either it's a one persona or a group of personas, and that's the goal. The serious pain point that they have.
+That's where we target because my mind is horizontal. Everybody you can use it, but for us, you have to figure out...
+Steven Muñoz | 12:23
+Great.
+divya.sabade | 12:24
+We have to go vertically deep, and that will turn out to be one of our moats, which is hard to copy.
+So for instance, I've just taken an example. We still take the APM interview example. So we have a persona rebuild for the performance that I have more notes down, but yeah, I think this is one of the key differences.
+Then for them, it's like peace and all. But for us, if our persona is APM, then you have to figure out how we want the state to be. We want them to be not anxious, but still they have time pressure.
+So we have to figure those things out. Then for us, this is super important. Whatever intent is coming out of the user, whatever happens in the app is towards that intent. It cannot be because I did one for Jim, and it would be the same for Rachel. No, it cannot be, because Rachel would have a different intent versus Jim would have different intents, even if they are AI PMs, right? One might be doing startup interviews, another might be doing Anthropic interviews.
+So you have to figure things out, right? I think that would slowly become another mode for us. Then, yeah, and then here, yeah, it's here I saw that you save stuff and sort stuff.
+But with Newton, I don't know what they plan to do. But for us, it's more important we keep them in the loop. They come back even after the interview, they come back for the interview. They are solely dependent on us. They would be like, "I cannot leave this app.
+I have to get the interview done, and now I cannot leave because I have to keep learning here whatsoever. So for us, this is what I was saying in the backend, the recall, the precision, the explanation, everything becomes super important for us. For them, it doesn't matter at this point.
+Yeah, any questions? Then we could go on the other parts.
+Steven Muñoz | 14:10
+Yeah, I was waiting for you. So, yeah, I have some comments because you mentioned very important points. So let me go back a little bit to the onboarding that you mentioned. I was thinking exactly about the call star problem that we are going to have here.
+Because, yeah, I was trying to remember what was my experience the first time that I installed this application. Because, yeah, let's say that you're APM, right? You discovered this product, and it's amazing. You can learn a bunch of stuff, all of that your intention, you install the extension, you click extension, and now what?
+So we make this onboarding so nice as we have here. But at the same time, because probably you have a bunch of things in your bookmarks or in your notes. So I would like that we can think about that experience.
+So we can give that a ham moment to the people really fast. So they go, "Hey, let's go to YouTube or Medium or do you have any article or something that they can just quickly use the extension that they can see that we are going to tag this for them and then that they can see."
+Okay, these are my goals really quick that they could understand the value of the product because my fear now is that I had this extension, and I opened it, and it's empty. Okay, yeah, you can save, and eventually we are going to process that.
+So what is that particular experience there because I feel that we need to think about that. So we come up with a great onboarding that at the same time shows super fast. The point...
+divya.sabade | 15:53
+The quicker a moment...
+Steven Muñoz | 15:55
+Yeah, the. Exactly, yeah, and what is the other question is what is Data Hamon because we have like different ideas, but right.
+divya.sabade | 15:56
+Yeah. So when... I think that's a good point. Yeah, let's put it here, what's the "aha" moment for our product? The other thing now I feel when you're talking is there a way we could import their history, like the stored stuff?
+Steven Muñoz | 16:21
+That's another great point.
+divya.sabade | 16:23
+Because then that could be like, "It came in the app, it already started working," something like that. So could we import history? Especially if it's an extension.
+Steven Muñoz | 16:34
+Yeah, probably because given we are focused on Chrome now for that extension, I don't know that I need to check, but that's a good point because it can reduce the friction of...
+divya.sabade | 16:34
+Right?
+Yeah.
+Steven Muñoz | 16:45
+I need to go to you if I need to.
+Just take whatever you have now in your bookmarks, for example, and we could identify...
+divya.sabade | 16:52
+Yeah.
+Steven Muñoz | 16:54
+You have here a medium article. You have here a YouTube video. "Hey, check this out. We have these ten articles for you now summarized. This is your learning path."
+Things like that is what is going to make people like, "My gosh, this is incredible." You are me that now I can't connect these to my goals.
+divya.sabade | 17:07
+Yes.
+Steven Muñoz | 17:09
+Great. My goals are that I need to implement my product in two weeks with AI help me and this is where I feel that people are going to say, "Gosh, this is what we need for my goals."
+divya.sabade | 17:23
+Yeah.
+Steven Muñoz | 17:24
+But yeah, let me see, trying. And what happens if we can't? Let's say that there's a restriction, we cannot get history, and we need to start from scratch. That's... We need to think about that.
+divya.sabade | 17:40
+Makes sense. Yeah, I think both are good points. We need to figure out if we can versus not in this... When I was going through the onboarding journey here, what happened is, though I'm not still paid, I was trying to... I think sign up.
+Then it took me to this page. That's why I purposely took all the pictures, because what it did is I was trying to sign up, and then it brought me here. It did not... Did it connect me to Google?
+Yeah, it connected me to Google Gmail, and then it brought me here, and it was doing some music or whatever, and then it started saying, "No ads." After I clicked this, I loved it. What they say I love it because that's the expression that came out of my mouth, too, to be very frank. I wrote, "I love it."
+Then I saw, "I love it here." So it was pretty cool. That is very well thought out. Then they did some swirls, and this person came in.
+Steven Muñoz | 18:33
+Yeah, yes.
+divya.sabade | 18:34
+And here is where they say, either you do the app or you do the extension.
+So they have three screens, and then they come to the app or extension. And the whole experience was very nice, very magical, very beautiful. So it was great. That's why I purposely took it. Because I like.
+You know. Maybe we could use some of it.
+Steven Muñoz | 18:55
+Because you know what there is...
+divya.sabade | 18:55
+And?
+Steven Muñoz | 18:58
+I have seen that, for example, they send you some emails with some inspiration so you can start saving these quotes or articles inside my mind.
+So maybe we can take some inspiration from that. And probably instead of asking the people in the onboarding to try to go to YouTube and say something, maybe we want to start with their goals and say, "Okay, you are trying to learn about how to implement agents."
+Maybe we can suggest for people some articles or some YouTube videos based on their goal so they can go and save it. This is where... This is how basically they are going to be able to see the ability of the product like, "Okay, got it."
+divya.sabade | 19:46
+Yes.
+Steven Muñoz | 19:48
+This is your goal.
+That's amazing. We have 10 articles or 10 videos that could be helpful to you.
+divya.sabade | 19:54
+Yeah.
+Steven Muñoz | 19:55
+Try it. Go ahead. Open extension, and you will see how we can organize this based on your goals into learning paths.
+Maybe that's the connection point that we could hit, but that we could have your goal people click and save, and then they see, "Okay, this is the learning path based on your goals." So there...
+divya.sabade | 20:15
+Other thing I'm thinking while you're talking is that we could do LinkedIn login because then we know the profile, right? So then we could have pre-curated content like if the profile says the product.
+So we have a pre-versus an engineer, so we could actually just... Because we now know what foundational AI is for a PM versus an engineer versus things like that. What we could do is we could pre-curate content for one or two personas, and if they have nothing, we just show the pre-curated content and then go from there saying you like or not like or something like that.
+That's another thing we could do. We could think of LinkedIn.
+Steven Muñoz | 20:58
+Yeah, I think that was the idea we could start with LinkedIn because maybe that's going to give us some extra information from the user, and that will be helpful.
+divya.sabade | 20:59
+Yeah, it's that's why my time went because I sat reading it, I was and that's how I came to know.
+Steven Muñoz | 21:08
+And the other point that about the onboarding. And I had exactly the same experience as you. Describing... I don't know if you were able to check the entire manifesto that they have for why they built the product that awesome is life-ful.
+divya.sabade | 21:31
+They are for this persona and this person, and they have pre curated content out there.
+So that's how that's what I'm saying, like this app is very different from a lot of apps that we see, like Notion and this and that, you know, they all like. But this is really cool. The experience is very nice. I love it.
+Like how they have done.
+Steven Muñoz | 21:48
+Yeah, and I think I if we can.
+divya.sabade | 21:49
+Very beautiful. Yes.
+Steven Muñoz | 21:52
+Yeah. They are very opinionated in terms of how they are. They are approaching this, folders are dead, and we should have just an extension that flows with our mind. All of that promise behind the product.
+I think that this is so powerful and why they have such a strong brand that really... Yeah, we don't need to get with a super long manifesto, but maybe we can think about what is important for us, why we are building this, why we believe that, for example, the hype is dangerous.
+divya.sabade | 22:16
+Yes.
+Steven Muñoz | 22:21
+You know, things like that. It's what is going to position us and differentiate against like a bunch of other products trying to go in all, you know, in a different direction. It's like almost everyone is trying to push you for the hype.
+But we are. We are saying. No, we. We don't want that. Right? It's we want to take an path. Yeah, we know that you have pressure, that's fine, but you're in control, right? We are going to help you. You're not going to be anxious like all the opposite.
+It's a different story. And I think that's powerful as well. We can at least build in this onboarding some kind of that spirit that we are trying to so people going to understand or maybe connect emotionally with this.
+divya.sabade | 23:01
+Yeah, I think no, that's a great point. Like "aha" moment and some kind of emotional connection and the feeling like they should be like how we feel good when we enter some feeling. So I think we have to create a feeling for the app to...
+Yeah. Okay.
+Steven Muñoz | 23:21
+Yeah, and the other comment is about... Yeah, you mentioned about the... Yeah, some colors and all of that. Yeah, of course. I think that what's going to be helpful here is that...
+I think probably my mind is going to be our best inspiration, but I don't want to just blindly copy my mind. So maybe if you have other references of branding you like, you can add this here and we can start building our own branding and component system.
+So we can start... This is the part where we can build scalable workflows. We have inspiration. Yes, but then we build our own design system. Based on that, we are building all the screens.
+If we have an app in the future, it's going to have the same look and feel, all of that. So feel free to just add it here if you have more inspiring... But we can start with this.
+divya.sabade | 24:09
+Tell me one thing, Steve, that how does so for so if we want to put inspiration into this clot code or whatever it occurs or whatever we're using, how does it generate design files or how does it work or do we give inspiration?
+And then or do we have to write something like, you know, this is how which icons we would want or just give images. Then it would be able to curate it.
+Steven Muñoz | 24:31
+Yeah, what I would like to do, Steven, is to basically... I use an extension that is called "GOF page" is basically to capture all the screens. Yeah, what they try to do is to, you know, capture all the pages that I'm navigating and then I have some problems for the Agents to describe what they are seeing.
+You know, how is the design System organized? You know, and learn basically from these images. And then based on that learnings, we start building our own component system.
+divya.sabade | 25:04
+Yeah, okay.
+Steven Muñoz | 25:05
+Go, let me share the screen. Go full page.
+That's the best thing. There are some pages that have more details on some design system from different pages. But I think that the best way is just to take screenshots from different pages and based on that, we can build our own. I TED to do that.
+But I didn't spend a lot of time because I know that we were going to just start doing changes. But I built a mini design system with what we have here. But of course, that's going to change based on what we define.
+divya.sabade | 25:41
+No, I just wanted to know. So that means I can just store images and then you can put that into the product. Then from there we could build the components and the design library.
+Okay, makes sense.
+Steven Muñoz | 25:50
+Of course, all of that is going to be part of one library, a reference library that we are building inside the product. So we can all of these references for inspiration.
+Then we can say things like, "Hey, I want my call to action similar to the inspiration too." Given we now what this inspiration is, to clearly define that what is going to help us to make this faster.
+divya.sabade | 26:24
+Okay, and then, yeah, I you still able to see my screen. Okay, so then, yeah, and then I loved and then I was thinking, why they don't have free. And then I realized, because they don't have ads, so that's why they don't have free, you know?
+So then I started thinking through it. And then obviously they have this... I'm sure they're doing something on a similar line. But yeah, anyways, okay, and then I have so I took some flows right?
+So they have a capture flow, a browse flow, an emotional flow, whatever. I think all that is fine. You can just give it to Claude to read all this. But yeah, what I really liked was this emotional clarity.
+I think we need to define what emotion the person should feel. We are definitely using AI simplicity and then zero manual tagging. For us, I think it would be more than just zero manual. Other features like the image recognition and all that... Whatever we like, we should use everything.
+Good feature list. Okay, yeah, I... Something I read so I wrote a good feature list. Yeah, this is where I wanted you to... Yeah, I said, "Feel free to read and add more," but I think this should be a strategy. Steven, after reading and chatting and all that stuff, I think this is what came out. Four things.
+First is the performance infrastructure. So we're not just storage because that's what my mind is, it's a memory, it's a storage for us. The recall rate explanation with the recall detection of the gaps because that's how we will make whether they are good at that node, should they level up more versus not?
+So all these things because our flow would be like what I'm saying if it's APM, let's say it's not in it's just upscaling. But still, they have to attempt, fail, diagnose, and improve. Reatt right, because we have to take them through. They start feeling, "No, now I'm not now I'm level one, I'm level five, now I'm level nine."
+So they should feel that. Level 10 is when they can actually clear an interview, and that would be super success for us. But we should build something in between where they are feeling that they're upscaling and they know it, things like that.
+Because then that would become common. Whether they are giving interviews versus they are doing their day job either is they have to level up. So leveling up should be our stuff and whatever is in the back should be focused on leveling up.
+So that's why I have all of this which we have to think through in terms of features and backend functions.
+Steven Muñoz | 28:54
+Hundred percent?
+divya.sabade | 28:54
+So for us, performance infrastructure is super important. Yeah. Go ahead.
+Steven Muñoz | 29:00
+No, 100% and I love that this cycle that you have here from attend, failed diagnosis, improve, and reattend. I think that we could build a bunch of things around that concept.
+divya.sabade | 29:13
+Yeah, and we have to for our system like the backend should know that he has the like the backend has to do it continuously improve.
+Steven Muñoz | 29:13
+So it's like a continuous improvement workflow. Exactly and that's the point of discussing this experience now because then we can build the entire system basically to be optimized for this particular goal.
+Agents should be optimized for this in instructions, backend infrastructure, and all of that. That's the funny part and it's interesting that you have this question mark on the interview simulation.
+divya.sabade | 29:51
+Yeah.
+Steven Muñoz | 29:52
+Because I'm...
+divya.sabade | 29:53
+I'm thinking...
+Steven Muñoz | 29:53
+I'm going to share like in the when I share the prototype.
+But the agent came with something similar in the chat. I was not expecting that because I saw, like it build like a chat with questions, and there's like a small option that says, like, interview simulation.
+divya.sabade | 30:02
+Eight.
+Steven Muñoz | 30:09
+And I say, gosh, this is interesting because of course, right? Makes sense. Like, I'm preparing, but who I know that I'm prepared. And we could probably maybe do some give some example because there's like a bunch of material on the web about like inter the type of like products and questions and you know, more than me because you are working basically with product school.
+So we have like a good baseline to, you know, train some agents at least with some basic idea and be more specific in terms of. Yeah, this is the type of questions... Try to build something that is closer to what the interviewers are doing now for this.
+divya.sabade | 30:47
+I'll tell you why I put a question mark there because when I was thinking through stuff, I realized what is easier for us to do in the MVP is upskilling.
+It's not interview prep. Why? Because if we do interview prep, we actually need people. We need a rubric, we need the question answers, we need people who would come in and like the SMEs, like the human experts. You would need all that stuff.
+So I think we should focus... The person is an AI PM under pressure. An interview and that would be one of the goals but I think the smaller MVP would still be like helping upskill today.
+I know GenAI, and now I'm an expert in GenAI. Now I want to move to agents. Now I know agents. Something new came up. I know 2AI, don't know MCP, now today I learned something. So now I know 2AI and MCP something on those lines.
+So that's why I put a question mark on interview because though I was thinking, it's amazing. And people will buy and invest and all that stuff, but people are investing. 2500 or just upscaling whether they complete a course or they do not.
+Steven Muñoz | 31:53
+That's right.
+divya.sabade | 31:53
+So I think that's why I put a question mark there because I think it's harder to prepare your MVP for interview simulation. We need a lot of wells.
+Steven Muñoz | 32:00
+Hundred, yeah, hundred percent. I think that that's a great idea, but of course, you know, for NBP no, it's something that may came along the lines, but I'm mentioning that.
+Yeah, it's interesting that the agent come up with that idea as you.
+divya.sabade | 32:14
+Yeah.
+Steven Muñoz | 32:14
+Yeah, but yeah, that's good. I like it eventually. But of course, for MBP, we should just try to keep this simple as possible with the core flows about... This is your information. This is your goal. This is how you can upscale based on your goals. Period.
+divya.sabade | 32:31
+Yeah. So this is where I'm saying we have to go vertical deep because this would become our moat, the performance and the vertical depth.
+So we have to figure out maybe not that inter... Maybe it's an IPM upskilling or something like that. But that's where... What's that super painful moment, which I realize is I'm so anxious, I do not know what to do? I want to just enroll in all courses. Should I enroll in this course? That course? Read this newsletter. That newsletter. I want them to be really peaceful.
+Yeah. I'm here, okay? I know that in fifteen days I will be here. That's where... I just invest whatever minimum amount or I just... I'm trying for free or whatsoever. We decide. But that key painful moment should be taken away from them.
+Right? Even the other part, I'm thinking like imagine they invest in courses, they invested whatever 5000 into courses. Now what do they do with the materials? So our system should be able to actually go take that material as well, if there's an option to extract that and be able to tell them that you did this much, but you have not done this much. This is the gap still.
+So that's... We can think later on like, "Okay, then man can be like, 'Let me get you in because now I have so many students doing all that stuff, and now I can understand whether they're learning and what they're learning and not running.'"
+If they're like, "Apps like man and platform like a man," they would be interested to know.
+Steven Muñoz | 33:54
+Yeah. And you know what? This is a great idea because that's a common feedback from people, and it's like, "Yeah, I just consume 10% of this material or from this session."
+I'm pretty sure that they are not going back. For example, for the... Once you're done, it's done.
+divya.sabade | 34:12
+It's very hard. You have to be very, I don't know what, very disciplined.
+Steven Muñoz | 34:19
+You're not going to go back to get it again like Eric's session about developing more phones. It's done, right?
+It's over. So you pay a bunch of money and then you're just trying to chase the next way to improve yours. That's a great idea. Yeah, of course, it's going to be more dependent on third parties because, for example, if it's leaving in Mayban, what are we going to do if we don't have access to that? We are going to be blocked.
+But yes, I think not.
+divya.sabade | 34:47
+Then we can be a good partner for you too, because now the students are able to do stuff right. That's what I'm heading to like you just thinking whatever came in my... I just want to put it because then those thoughts are somewhere, so you can become one of those as which may integrates with.
+Then, it's more like now we are not just consumers, which we are enterprises. Now we are integrating because integration is another way in the AI world to stay in the business you have to integrate, right?
+Steven Muñoz | 35:12
+Yeah, and can you open for a second the prototype because I think that in this particular piece, that... Yeah, the concept.
+divya.sabade | 35:14
+So that's why I brought that point. Yeah, so when we build, we have to think through right, because these are if even down the line, if we want to do that, then our system should support. So that's why I'm bringing these points.
+Then the third point is that now we have the infrastructure. Now we know exactly what vertical we are targeting, and later on we would expand. So we'll do integrations. Now I want the infrastructure to be cognitive intelligent, right?
+It's like... So this is where all these things would come. Because now we are asking them to level up. Then how does the system with trust say what level they are? What are the gaps? How would they level up?
+So this is all we need to do. So we need to define something which is like what do we define as foundational and what does level 1 versus level 5 versus level 10 mean? How would the nodes that you showed in the app... Okay, we can make them pretty, but how we make them valuable in terms of backend understanding everything and giving the right info.
+Steven Muñoz | 36:31
+Raph, the second option. I think this is a very interesting idea because maybe we can... Fun this a bit.
+But the way that I'm seeing this is super clear to me because it's like, "Yeah, this is my path. I'm trying to learn all of these bunch of concepts that are going to be required for my goal, and this is how I... In terms of progress on each."
+Right, okay, I want to learn about rack systems. Okay, this is my main topic, but now you know this is breaking down in different graphs like... Okay, I need to learn about vector databases. I need to learn about embeddings. I need to learn about E-nos and testing.
+So where I am now on each concept right? And then this is going to show me... Okay, this is where you need to pay more attention and that's how we can focus the system to... You're very good now here bad.
+divya.sabade | 37:27
+Yes.
+Steven Muñoz | 37:28
+You need to pay attention here.
+I think this concept, the way that it is built, is super interesting to me at least is very clear. Like, okay, these are all my connections with what you are saying, not just learning, it's most like connections between the different nodes, and that's powerful.
+I have not seen that before in any other platform.
+divya.sabade | 37:50
+Yeah no, I loved it like even I liked it. I definitely think it can be refined, but I like it. What I really like is. One. The. Nodes, second, the connections so you can understand what's related to what and third, that they're doing recommendations like here then you know like you know what's here, you know like you know what you have done.
+Steven Muñoz | 38:02
+Right?
+divya.sabade | 38:07
+So I think it's powerful, and even I thought when I clicked something, it went back to the library. Yeah, so when I click, it goes back to the library, which is good. So I definitely like this concept. It's okay, let's just... This is good because this is what we told that we...
+I think why it came up here is because in the PRD we said we want that concept graph. The graph, you remember for the backend, it interpreted that, I think, in the front end as a graph, but it's actually good.
+It's a nice concept.
+Steven Muñoz | 38:43
+Right.
+divya.sabade | 38:44
+Yeah, now that we're thinking... Now see, that's what happens with the product mindset, and I'm thinking now it should be intent-wise graph if your intent is doing something, then they should have multiple tabs.
+Intent is this, then this is the graph, something like that. There's a master graph and then you can click and make sub-graphs, something like that.
+Steven Muñoz | 39:06
+Yeah, that's good. But probably we can start maybe with trying to... Yeah, I think that everything is going to be tied to the goals because, for example, now if you go to the learning pads.
+divya.sabade | 39:14
+Yeah, intent, right, the go.
+Steven Muñoz | 39:18
+I think that actually, yeah, this is actually this. I think that this is the core piece for us, the starting point. Of course, a nice onboarding with all that we talk about, but then... I mean, what are you trying to do?
+We want to help you, but we need to understand how we can serve you better. The only way to understand you is to know what the goal of the user is because it's very different. An interview preparation is different from trying to just launch a product.
+It's different if you work for a startup versus a big company. I think that at least some basic... Yeah, in the onboarding, identify really quickly what the user is trying to do. It's the starting point.
+Then we can start expanding the rest of the stuff. Okay, all of this learning and all of these nodes and stuff are going to be organized, and we are going to cluster in this concept graph that is connected to one learning path because it's not the learning path alone.
+It's connected to an organized system based on your goal. So probably this...
+divya.sabade | 40:21
+Yeah.
+Steven Muñoz | 40:24
+Okay, this is your goal, and this is the graph that is going to basically connect to your goal, period, right? We are going to make you get there.
+This is why you fill the planks.
+divya.sabade | 40:31
+True, and that's why I'm saying that. Then they could have different intents. One intent could be, "Hey, I want to clear." I want to just master a topic. They have good intents, actually, so they have mastering a topic as my base intent, right?
+Then after the base intent, maybe I want to build a project because now I want to make a portfolio, and then I want to interview for something, and now I'm done with everything.
+Steven Muñoz | 40:46
+Why? Are guess.
+divya.sabade | 40:53
+I want to stay.
+So actually, all the four intents are very nice. But what I'm saying is that when we go back to the concept graph, we should have a master graph and there could be multiple graphs because you could have multiple intents, and you can keep them the same in a bigger version, or you could actually break them down.
+So when we build the back end, we have to think through that part. There's a concept graph, but they could be images of that concept graph, or they could be a master one with child nodes, or they could be separate for even one user.
+Okay, so yeah, so I put some things... They could be more whatever I thought made sense at this point. I've put them here. Okay. Then the last one was... We are not just consuming, but this is, I think, very crucial. We need a personal readiness score, and that's where the node completion or the level, all that ties to the score.
+Because you're not just consuming, but you're getting prepared. You feel prepared, you're not... You can consume on LinkedIn, just go around and keep reading, right? But right now you fish-shoot free. No, yeah, I know rags now.
+Maybe to know rags I have to read an article or I don't know, maybe look at a video or maybe build a project. But once I've done those three parts, and that's how we have to structure in the back end. What does a complete mean for us?
+So that means now you can do 100 times more. But you are good at tracks like that's how we have to... So we would need some kind of score in the back end, and we have to figure out what that score maps to variables.
+That's why we're saying we're building your capability. We are leveling you up and not just helping you consume. That's what my mind is doing. It's just helping consume. It's not helping level up.
+Steven Muñoz | 42:41
+Yeah, and I think that seeing you... I'm just... I'm very visual.
+divya.sabade | 42:43
+So, yeah, so this is where all of this will become important again.
+Steven Muñoz | 42:54
+So I'm trying to think about having these notes very visual and the completion of these notes being... Really how I say that.
+I mean, what I'm trying to say is if I have these notes very visual, right? We put that, "Okay, this is your goal. This is your MO thing, right?" You have different nodes, and we try to take the people into that emotional experience about how you need to feel your nodes, right? I don't know if nodes is the right wording for this.
+Maybe we can find a better one, but give them these incentives of, "Yeah, you're getting closer. Your node is done. Your this other node is almost done."
+divya.sabade | 43:39
+Yeah, theory, right?
+I saw this one. I don't know, a long time back, I had this meditation app. It was so amazing. When I opened the app, it was like you planted a seed.
+When I did meditation, it was like growing the branches and it was like a tree. I did not finish it, but that analogy was so powerful that you planted the seed. Now it's growing. It's become small now you keep practicing, so it becomes a huge tree.
+So something on those lines. The other one, but I can think of is like there's a cup and then you're pouring the water and it's getting filled up. There are different colors which represent the different topics.
+So there are multiple analogies we could think through. This is what happens in brainstorming. See, the idea starts flowing and I should actually jot it down. Yeah, like, now I have like three trees in my garden, right?
+Steven Muñoz | 44:28
+Probably if we... I think that yes, then because of course this nodes concept is very familiar for us, but maybe it's not the most friendly way for users. So if we think about...
+But it's powerful because if you're thinking in a traditional learning system, it's like, "Okay, I have lesson one completion." It's super boring like the usual stuff, but now you're seeing your tree. I like that analogy about the tree because it's similar, right?
+I have some trees. We have the core components, the roots, and then we have the other stuff that is emerging from the roots so we can show people like, "Okay, you are growing your tree, right? Keep doing this."
+Feel the other... I'm going to say no, but we are trying to evolve that idea. Keep feeling this or growing this. It's so delightful. I mean, for people, feeling that they are growing and if they keep pulling water, I mean investing more time learning.
+It's such a different way of rewarding people and motivating them for completion. I'm pretty going to give us some thinking about retention and engagement as a good driver for that.
+divya.sabade | 45:43
+Because I know agents, all this and that. I mean, yeah, that is amazing. I mean, that's good for, yeah, people sharing and just, you know, spreading the word out.
+No, I definitely think because you're right.
+Like the grass would exist in the back end, but in the front end, we could make it a little bit more easier for people to digest and all. So. And I think that's right. Like with our app, the feeling should continue, you know, the feeling of, like, having the power and you can do it and, you know, you're great, just keep going on. That should continue is what I feel too.
+Yeah. So yeah, those were the four things I think for the backend very important. We have to definitely focus on the score, which would have all of this cognitive part, the vertical spread, which I think we should brainstorm one more time.
+But yeah, what is the key persona? That one and then the performance. So that's why I think this one is very important. I'll put a note here because I think it has to go somewhere in the backend strategy.
+So we have... Whenever we talk to... We have to tell them that you have to consider all this. This is because we want to build a moat, not just another product. Yeah, and then I had a few other things. This is what I wanted to quickly do. MVP scope.
+I think we can take again this is just one first draft, but what we should build and what we should not focus on and then what the flow should be. This base is very persona-specific.
+So if we think of taking another persona, we can build the flow accordingly. Yeah, and then, yeah, the backend in this would be the MVP backend. So I think this is again, like, once trying to do maybe just put this in that so that he can understand what we're building.
+Steven Muñoz | 47:35
+Extra.
+divya.sabade | 47:43
+Yeah. So yeah, these are a few points. Yeah, this is all I had in my mind today. I wanted to share... Let's build something which is scalable, immediate value. People can see small. Easier to implement and then easier to grow. Yeah.
+Steven Muñoz | 48:07
+No, that this is great. This is great, Divia. So probably, yeah, for what I'm going to propose for Monday is that maybe I can do a new round based on this in terms of...
+Okay, onboarding experience that's one whole... Like the flow that you have there sign like sign up for this particular one.
+divya.sabade | 48:28
+Yes.
+Steven Muñoz | 48:30
+Okay. But, yeah, taking some inspiration from my mind... This is the onboarding flow, the find year goals plus the timeline like injecting that into this initial flow I think about...
+divya.sabade | 48:43
+Yeah.
+Steven Muñoz | 48:44
+Yeah, this step three is the most challenging piece for me because it's where we are going to put the friction for the user. Because without that, basically we don't have anything. There is nothing. This is super critical.
+We need them to give us information. So I would like to think about potential ways about... Okay, if they don't want to do it, this is what we can recommend. As we were talking in that trying to think about that flow like, "Hey, you have something to share?"
+divya.sabade | 49:09
+Yes.
+Steven Muñoz | 49:14
+No, I don't have it. I don't want to do it now. No worries, we have something for you. Think about these cases.
+So we have something. Then, yeah, do a new round in terms of the internal platform, try to show these three concepts like evolve the graph into the tree because I'm curious and see what the agent could do if we give this notch for the idea.
+And see what's happened now with that flow like onboarding, goals plus timeline, the plan B in case they don't want to save anything and how we can show them these three concepts. I think this is the "aha" moment because this is where they are going to see... Gosh, this is great. This is amazing. This is going to help me grow. I want to start doing this right now because they have the pressure, of course.
+divya.sabade | 50:13
+Yeah, I think, yeah, we should do that. And then on Monday, let's yeah, whatever you whatever comes out of you know this when you put this stuff in and other things and then whatever comes out let's do a review of that and maybe I'll compare what it build first versus second.
+So that was we understand. So every time you would do. Steven, would you do another like instance. And then. So it forgets the before and it reo or would you just pile on like what are your thoughts?
+Steven Muñoz | 50:42
+Yeah. Basically, this is the branching piece of the burgeoning system. So what I can do is just save a branch with, let's say B1, and now have a new branch with...
+divya.sabade | 50:54
+Have another one, right, so that can be fresh.
+Steven Muñoz | 50:56
+And I can. Yeah, I can deploy both. So we can see branch B1.
+divya.sabade | 51:03
+Okay, yeah, let's do that on Monday. Then if things look fine, you can tell me how to branch out. So then I can start doing more hand-on Z2.
+Steven Muñoz | 51:12
+Y.
+divya.sabade | 51:12
+And then we can experiment between a few, you know, few versions. And then just once we kind of. Okay, this is the right way to go. We start, like, actually doing that.
+Steven Muñoz | 51:21
+This is a great point. So probably by Monday, once we make this review, and probably we have some additional comments and all of that with the outcome of that session.
+divya.sabade | 51:30
+Yeah.
+Steven Muñoz | 51:34
+Yeah, that's great. What you are mentioning...
+So maybe you can now download the repo. I can show you how to run this locally and in some of these additional comments you can start experimenting in your own branch and see...
+divya.sabade | 51:41
+Yes.
+Steven Muñoz | 51:47
+Hey, I found this concept. Google and I can do the same thing and then we can start doing not only the strategy piece collaboration, but all the code piece collaboration.
+divya.sabade | 51:56
+Yeah, that's what I went... So I didn't know this was great, this was much needed. Now we have more clarity.
+Steven Muñoz | 52:02
+Exactly.
+divya.sabade | 52:02
+So on Monday, let's just do that. And from there, yeah, let's you just teach me how to do the experimentation branches, and then, you know, I'll start experimenting too.
+So then we have more ideas and then we can compare them and then choose which looks the right or maybe bits and pieces. And then you can start the final thing that you said right where we now we have much more clarity.
+And then we give the final push to the actual productions, kind of like the pipeline. Whatever you were saying the.
+Steven Muñoz | 52:27
+Yeah, it's basically yeah. AF after we have these I mean kind of our requirements because now prototypes are the new PRDS so once we have the protot type in terms of okay this idea, we feel comfortable. This is the flow that we want to bed. This is what we like, yeah, that's going that that's where I'm going to start building our infrastructure like this is our development environment, this is our production environment, this is what's going to happen. All of that, right?
+But. Yeah. But. But this is great. This is great.
+divya.sabade | 52:58
+One more thing while you go to these sessions, could you, once again, whenever you get a chance, ask people if they are more interested in getting a job or if they are more interested in learning upskilling AI.
+What's going on? Even for Aman scores, how many people are in a job and just upscaling like that number versus people because they don't have a job, they're coming and trying to upscale. If just because that's where I want to finalize that persona because I know interviews are a good use case, but it's harder because we need human values.
+Steven Muñoz | 53:36
+That's right.
+divya.sabade | 53:36
+But upscaling is would be a little easier to solve first. That's where I was heading to.
+Steven Muñoz | 53:42
+Yeah, based on the vast majority of the population in terms of Ammon courses, it's people trying to upskill.
+divya.sabade | 53:52
+Upskilling. Okay, that's what I wanted to hear. Okay, perfect, then the upskilling makes sense, actually.
+Steven Muñoz | 53:58
+Yeah, because if you see all of them are trying to... How can I implement this in my company with my team launching products, all of that. Of course, we have cases from people that are trying to look for a job, but this is not the ICP basically that Ammon is bringing to the courses. It's people that are desperate for learning. Now the next seven days or the next two weeks because they need it now. They need to upscale now because they have the pressure now.
+divya.sabade | 54:27
+Yeah, and what's the tool? It's the same cursor lot. This is all what people are using.
+Steven Muñoz | 54:35
+It depends on the course because Aman a has different courses, but yes, in general, they always start with cursor the cursor agent and then they add Claude call as a new like lesson, kind of similar to what we did in our cohort.
+divya.sabade | 54:51
+And that I think that was powerful because just Cursor wasn't so good, but when Claude came in, it was like, really good.
+Steven Muñoz | 54:56
+Yeah, Claude is my best tool. I use it every day. So that's the one that we are going to use to build this product. It's the one that we are using to build a product, actually.
+divya.sabade | 55:06
+Yeah, okay, makes sense. No, definitely. I think... No, this is great. Much more clarity now. So trying to see download this, feed it in, and how it goes, and then whenever you build another round, just push it to me, and then before the meeting, I'll review it so that we have more discussions. During Monday's meeting, I already sent a meeting for... I think 4 PM your time.
+Steven Muñoz | 55:32
+Seventeen.
+divya.sabade | 55:33
+No. 04:00 pm my time. I4 to five. Y.
+Steven Muñoz | 55:37
+Yeah, that's why, and I really appreciate that you made the time. I know Friday is hard for you, but I wanted to make this session because the weekend is the most productive time for me to work on this.
+So I wanted to make sure that at least we have something so we can do a new round of iteration.
+divya.sabade | 55:53
+Yeah, I agree.
+Steven Muñoz | 55:55
+Then on Monday, we are going to have this much more fine-tuned in terms of what we're looking for. Probably this is going to require some extra weeks next week, but I'm pretty sure that by the end of next week, if things are expected, we can start building the functionality for this.
+divya.sabade | 56:12
+And I think the building. I'm not worried because I know you'll do it. You're doing great.
+And even I'll on the you know, I'm able to like kind of understand and do it in the way I think what we are doing spending time right now, this is very crucial because once we start building, it's very difficult to come back and do stuff.
+So the more clarity we have in the start, I think it's very even if we spend one more week or it's fine just yeah, just getting very clear like the basic thing we want to build.
+Steven Muñoz | 56:28
+What part?
+divya.sabade | 56:36
+I think it's. It's very important. I don't know, but like I don't know, like this is very inspiring. Page I'll just share right now.
+So here they have stories of Y Cominator where they have like the previous photos, they just got the funding versus the next photo and they are like kind of very big as a copy. So it's very inspiring to see.
+So I and I always see that when I'm building something, it's just inspiring. So. Yeah. So you could see kind of. It's good on the side.
+Steven Muñoz | 57:02
+Let's see where it goes because maybe eventually, if we get good traction and all of that, we could apply to YC because they are very heavily now investing in AI companies, and we are going to be so much AI-based.
+You know what? Now that you mentioned this grid, the president of YC was asking a huge... He was recalling that we need now the COR for BMS, saying that one is doing personal laws, and I feel that we are on that line. We are not going to bed, of course, the personal OS for PMS because I think that honestly, Cursor is so close to doing that. They just need to start improving the UI and some things, and we're just going to be out of the market.
+These kinds of things are on that thinking, like we are helping PMS that are trying to upscale and get better and use AI so they can achieve these goals. So it's similar because at the end, if you think about the personal OS, it's just a tool for people to do what we are trying to do. The outcome is the outcome for people is not learning coursework, right? Because it's like, "I don't care too much about all of these different things or the terminal or installing Git." I don't care.
+But it's more about how they can start experiencing and learning agent experiences and obscare. I feel that we are on the same line. Probably it's a different problem what they are saying, but it's connected to what we are doing.
+That's why I'm saying that this is a good validation for the thinking that we are doing here because it's... Yeah, if these guys are saying that we need courses for PMS because he's seeing a huge need, that's to hear.
+divya.sabade | 58:43
+Yes.
+Yeah, I think I definitely I agree. Like, I think if we can make it work in terms of build it, people use it, maybe people pay for it. That's the biggest validation. Then it's so easy to apply because now people are paying for your tool.
+It's easier to get more because now you want to scale right? If you have the back-end system and every CLA clear clarity in the first place, then it becomes easier to scale, right? So you don't have to trash your product, you just keep scaling it.
+Imagine the Airbnb, they came up with such a small idea, just renting their space, right? That's what they started with, but they did it so good, so easy and all that stuff. So that's why I'm thinking if we do that one use case so nice like if somebody is paying $2,000, it is worth it, right?
+Why just $2,000 is not a small amount, right? Not just here, people are all over the world. They are paying in USD, right? So I think this is a spa. People are investing money and people will continue to invest for the next two, three years.
+So it's a great point if we are able to take it off.
+Steven Muñoz | 59:54
+For...
+divya.sabade | 59:57
+Yeah, that's why I'm like, "This is the right time."
+Steven Muñoz | 59:57
+Yeah, and this is a great moment as well for what's happening now because things are emerging and there is... I think that Ammon knows about this as well, and that's why I think that he's pushing so hard with so many courses now because I know that he feels that this is not going to last.
+I mean, this... This kind of... Right. Because... Go right 1%.
+divya.sabade | 01:00:22
+If we go in and we're able to monetize and materialize and everything, that's where we solve the core problem.
+Then you build right now Airbnb SW like its services and this and that and all that stuff. And we could do that, but you have to solve one problem really, right? That's where I think our focus should be.
+Yeah, anyways, okay, awesome. So nice talking to you, Steven, and I'll see you on Monday. And whenever you build it, just pass it along, and I'll go through it.
+Steven Muñoz | 01:00:50
+I feel so much energized with this session that it's incredible.
+divya.sabade | 01:00:57
+We'll build something for ourselves and maybe, you know, you never know, like we become really good at our skills, so. So, yeah, so it's good, I think.
+Steven Muñoz | 01:01:03
+Who knows? Yeah, let's see what it...
+divya.sabade | 01:01:04
+Anyways. Yeah.
+Steven Muñoz | 01:01:06
+Alright, yeah, it was great for you, bye.
+divya.sabade | 01:01:07
+Bye. Have a good weekend.
