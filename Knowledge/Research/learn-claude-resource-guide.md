@@ -39,7 +39,30 @@ Curated guide with 11 sections covering Claude from beginner to advanced. Every 
 - **7 Steps to Fluency** — structured learning path
 
 ## Why This Matters for Upstream
-- Our target users (PMs) need exactly this kind of structured AI learning
-- The progressive level structure (Use → Build → Design) mirrors our onboarding intent model
-- Content seeding in our app could reference/complement these official resources
-- The "7 Steps to Fluency" framework could inform our readiness score methodology
+
+### Direct Parallels
+| Learn-Claude | Upstream | Connection |
+|-------------|----------|------------|
+| 3 skill tiers (Use → Build → Agents) | Intent-based onboarding paths | Same progressive model — we personalize it |
+| 7 Steps to Fluency | Growth Tree visualization | Both map learning milestones, ours is interactive |
+| 140+ curated resources by level | Content seeding (StepContentSeeding) | Their dataset could bootstrap our initial content library |
+| Concepts (Prompt → Context → Agent) | Path evolution within a single user journey | We track this progression dynamically per user |
+| Chrome extension for capture | Our Chrome extension (bookmark + tag) | Similar capture-to-learn model |
+
+### What They Have That We Don't (Opportunities)
+- **Expert network (60+ voices)** → Community mentors / guest content feature
+- **Separate UNDERSTAND vs PRACTICE sections** → Our app blends theory and practice; consider conceptual separation
+- **Static simplicity** → Zero friction, no login — good for top-of-funnel discovery
+
+### What We Have That They Don't (Our Edge)
+- **Personalization by intent** — they're one-size-fits-all, we adapt
+- **Readiness Score** — dynamic, not a static checklist
+- **Interactive Growth Tree** — visual progress, not just a numbered list
+- **Today's Focus dashboard** — daily actionable guidance
+- **Multi-path system** — users can pursue multiple learning goals simultaneously
+
+### Actionable Ideas
+1. Use their 140+ resource links as seed data for our content library (with proper attribution)
+2. Map their "7 Steps" to our Growth Tree nodes as a Claude-specific learning path template
+3. Their expert network list = potential outreach targets for community features
+4. Their evolution model (Prompts → Context → Agents) could become a default path template for "AI-first PM" intent
